@@ -164,7 +164,7 @@ def main():
 
     args = parser.parse_args()
 
-    # count_and_save_statistics(args.corpus_dir)
+    count_and_save_statistics(args.corpus_dir)
 
     with open(args.output_file_name, 'w') as output_file:
         raw_text = generate_raw_text(args.approximate_text_length)
